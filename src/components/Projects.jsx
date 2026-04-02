@@ -4,12 +4,12 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Chaaya',
+    title: 'Swarix',
     description: 'A full-stack real-time chat and communication platform featuring user avatars, presence tracking, and robust notifications.',
     tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
     github: 'https://github.com/sahilshirsath603-stack/Chhay.A',
     demo: 'https://chaaya-vert.vercel.app/',
-    image: 'https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80',
   },
   {
     title: 'Modern Portfolio',
