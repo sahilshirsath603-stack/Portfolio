@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
+import resumePdf from '../Sahil_Shirsath_CV.pdf';
 
 export default function Hero({ onTriggerGravity }) {
   return (
@@ -50,7 +51,15 @@ export default function Hero({ onTriggerGravity }) {
             <a href="#projects" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]">
               View Projects <ArrowRight className="w-5 h-5" />
             </a>
-            <button onClick={onTriggerGravity} className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-transparent hover:bg-white/5 text-white font-medium transition-colors border border-slate-700">
+            <a 
+              href={resumePdf} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium transition-colors border border-white/20 backdrop-blur-sm"
+            >
+              Download CV <Download className="w-5 h-5" />
+            </a>
+            <button onClick={onTriggerGravity} className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-transparent hover:bg-white/5 text-slate-400 hover:text-white font-medium transition-colors border border-slate-700">
               Break the UI
             </button>
           </motion.div>
