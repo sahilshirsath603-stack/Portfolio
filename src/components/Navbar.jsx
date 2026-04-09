@@ -22,7 +22,7 @@ export default function Navbar({ onTriggerGravity, isGravityActive }) {
   }, []);
 
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -30,10 +30,10 @@ export default function Navbar({ onTriggerGravity, isGravityActive }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo(0,0)}>
+          <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
             <span className="font-black text-2xl tracking-tighter text-white">Sahil<span className="text-blue-500">.</span></span>
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a key={link.name} href={link.href} className="text-slate-300 hover:text-white transition-colors text-sm font-medium">
@@ -52,7 +52,7 @@ export default function Navbar({ onTriggerGravity, isGravityActive }) {
 
       <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
