@@ -37,7 +37,7 @@ export default function Hero({ onTriggerGravity }) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-slate-400 mb-8 max-w-2xl leading-relaxed"
           >
-            I'm a B.Tech Computer Science student currently in my 8th semester at Sandip University. I specialize in Web Development, crafting modern and interactive digital experiences.
+            Aspiring software engineer with expertise in full-stack development and machine learning, experienced in building real-world applications including an NLP-based Fake News Detection system and a real-time chat platform with live interaction features. Strong foundation in React, Node.js, and scalable system design, with a focus on delivering efficient and impactful solutions.
           </motion.p>
           
           <motion.div 

@@ -19,10 +19,10 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-slate-400 leading-relaxed pl-16">
               <p>
-                Hello! I'm Sahil Shirsath, a passionate Web Developer with a strong interest in creating beautiful, interactive, and high-performance applications. I am currently pursuing my B.Tech in Computer Science and am in my 8th semester at Sandip University.
+                Hello! I'm Sahil Shirsath, an aspiring software engineer with expertise in full-stack development and machine learning. I am currently finishing my B.Tech in Computer Science at Sandip University.
               </p>
               <p>
-                I have been honing my skills in web development, focusing on building accessible, inclusive products and modern digital experiences. 
+                I have extensive experience building real-world applications, including an NLP-based Fake News Detection system and a real-time chat platform (Connectify) with live interaction features. I focus on delivering efficient, scalable, and impactful solutions using modern tech stacks like React and Node.js.
               </p>
               <p>
                 When I'm not coding, I'm always looking to learn more about the latest technologies in the web development space.
