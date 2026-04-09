@@ -29,7 +29,7 @@ export default function Contact() {
             <a href="https://www.linkedin.com/in/sahil-shirsath-064690255" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800/50 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="#" className="p-3 bg-slate-800/50 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-colors">
+            <a href="https://x.com/Sam_Shirsath_16" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800/50 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-colors">
               <Twitter className="w-6 h-6" />
             </a>
           </div>

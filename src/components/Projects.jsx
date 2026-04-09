@@ -9,15 +9,7 @@ const projects = [
     tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
     github: 'https://github.com/sahilshirsath603-stack/Chhay.A',
     demo: 'https://chaaya-vert.vercel.app/',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80',
-  },
-  {
-    title: 'Modern Portfolio',
-    description: 'A beautiful, personal portfolio website with a dark tech theme, Framer Motion animations, and a responsive design.',
-    tags: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-    github: 'https://github.com/sahilshirsath603-stack/protifilo',
-    demo: '#',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80',
+    image: '/swarix_preview.png',
   }
 ];
 
