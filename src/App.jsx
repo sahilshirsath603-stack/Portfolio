@@ -7,19 +7,16 @@ import Certificates from './components/Certificates';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import GravityOverlay from './components/GravityOverlay';
 
 function App() {
-  const [isGravityActive, setIsGravityActive] = useState(false);
-
   return (
     <div className="relative overflow-hidden min-h-screen text-slate-100 font-sans">
       <div className="fixed inset-0 min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-black -z-10" />
       
-      <Navbar onTriggerGravity={() => setIsGravityActive(true)} isGravityActive={isGravityActive} />
+      <Navbar />
       
-      <main id="gravity-content" className={`transition-opacity duration-1000 ${isGravityActive ? 'opacity-0 blur-sm pointer-events-none' : 'opacity-100 blur-0'}`}>
-        <Hero onTriggerGravity={() => setIsGravityActive(true)} />
+      <main id="gravity-content" className="transition-opacity duration-1000 opacity-100 blur-0">
+        <Hero />
         <About />
         <Education />
         <Certificates />
@@ -27,8 +24,6 @@ function App() {
         <Projects />
         <Contact />
       </main>
-
-      {isGravityActive && <GravityOverlay onClose={() => setIsGravityActive(false)} />}
     </div>
   );
 }

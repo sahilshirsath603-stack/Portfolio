@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import resumePdf from '../Sahil_Shirsath_CV.pdf';
 
-export default function Hero({ onTriggerGravity }) {
+export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] -z-10 mix-blend-screen" />
@@ -59,9 +59,6 @@ export default function Hero({ onTriggerGravity }) {
             >
               Download CV <Download className="w-5 h-5" />
             </a>
-            <button onClick={onTriggerGravity} className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-transparent hover:bg-white/5 text-slate-400 hover:text-white font-medium transition-colors border border-slate-700">
-              Break the UI
-            </button>
           </motion.div>
         </div>
       </div>
