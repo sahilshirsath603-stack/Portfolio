@@ -10,6 +10,13 @@ const projects = [
     github: 'https://github.com/sahilshirsath603-stack/Chhay.A',
     demo: 'https://chaaya-vert.vercel.app/',
     image: '/swarix_preview.png',
+  },
+  {
+    title: 'Fake News Detector',
+    description: 'A hybrid AI system that classifies news articles as real or fake using BERT. It features an automated explanation engine powered by GPT-4o-mini to help users understand the reasoning behind each prediction.',
+    tags: ['React', 'FastAPI', 'BERT', 'Python', 'OpenAI'],
+    github: 'https://github.com/sahilshirsath603-stack/Fake-News-Detector',
+    image: '/fake_news_preview.png',
   }
 ];
 
@@ -60,9 +67,11 @@ export default function Projects() {
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-sm">
                     <Github className="w-4 h-4" /> Code
                   </a>
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-sm">
-                    <ExternalLink className="w-4 h-4" /> Live Demo
-                  </a>
+                  {project.demo && (
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-sm">
+                      <ExternalLink className="w-4 h-4" /> Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
