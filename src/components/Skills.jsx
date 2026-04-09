@@ -1,15 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Database, Layout } from 'lucide-react';
+import { Code2, Database, Layout, Brain, Terminal } from 'lucide-react';
 
 const skills = [
   { name: 'React', category: 'Frontend', icon: Layout },
   { name: 'JavaScript / TypeScript', category: 'Frontend', icon: Code2 },
   { name: 'Tailwind CSS', category: 'Frontend', icon: Layout },
-  { name: 'Framer Motion', category: 'Frontend', icon: Layout },
+  { name: 'Python', category: 'Backend / AI', icon: Terminal },
+  { name: 'FastAPI', category: 'Backend', icon: Database },
   { name: 'Node.js', category: 'Backend', icon: Database },
-  { name: 'Express', category: 'Backend', icon: Database },
-  { name: 'MongoDB / PostgreSQL', category: 'Database', icon: Database },
+  { name: 'BERT / NLP', category: 'AI / ML', icon: Brain },
+  { name: 'OpenAI API', category: 'AI / ML', icon: Brain },
+  { name: 'MongoDB / SQL', category: 'Database', icon: Database },
 ];
 
 export default function Skills() {

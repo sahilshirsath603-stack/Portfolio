@@ -4,7 +4,7 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Connectify',
+    title: 'Connectify – Real-Time Chat & Live Room Platform',
     description: 'A full-stack real-time chat and communication platform featuring user avatars, presence tracking, and robust notifications.',
     tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
     github: 'https://github.com/sahilshirsath603-stack/Chhay.A',
@@ -25,10 +25,10 @@ export default function Projects() {
     <section id="projects" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true, margin: "-100px" }}
-           className="mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 flex items-center gap-4">
             <span className="w-12 h-[2px] bg-emerald-500"></span>
@@ -54,7 +54,7 @@ export default function Projects() {
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
                 <p className="text-slate-400 mb-6 flex-1 text-sm leading-relaxed">{project.description}</p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map(tag => (
                     <span key={tag} className="text-xs px-2 py-1 bg-slate-800 text-blue-300 rounded-md">
@@ -62,7 +62,7 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex gap-4 pt-4 border-t border-slate-800/50">
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-sm">
                     <Github className="w-4 h-4" /> Code
