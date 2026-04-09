@@ -4,7 +4,7 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Swarix',
+    title: 'Connectify',
     description: 'A full-stack real-time chat and communication platform featuring user avatars, presence tracking, and robust notifications.',
     tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
     github: 'https://github.com/sahilshirsath603-stack/Chhay.A',
