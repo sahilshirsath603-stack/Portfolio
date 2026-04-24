@@ -8,7 +8,7 @@ const projects = [
     description: 'A full-stack real-time chat and communication platform featuring user avatars, presence tracking, and robust notifications.',
     tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
     github: 'https://github.com/sahilshirsath603-stack/Chhay.A',
-    demo: 'https://chaaya-vert.vercel.app/',
+    demo: 'https://vibemode-vert.vercel.app/',
     image: '/swarix_preview.png',
   },
   {
