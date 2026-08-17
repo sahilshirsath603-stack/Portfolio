@@ -117,9 +117,9 @@ export default function Hero() {
           {/* Right Column: 3D Crimson Canvas */}
           <div className="lg:col-span-5 relative flex items-center justify-center">
             <Tilt3DCard className="w-full rounded-3xl glass-card-3d p-6 border border-red-900/50">
-              <div className="absolute top-4 left-4 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#000000]/90 border border-red-900/50 text-xs font-medium text-red-400">
-                <Flame className="w-3.5 h-3.5 text-red-500" />
-                <span>3D Cyber Batarang</span>
+              <div className="absolute top-4 left-4 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#000000]/90 border border-red-900/50 text-xs font-semibold uppercase tracking-wider text-red-400">
+                <Flame className="w-3.5 h-3.5 text-red-500 animate-pulse" />
+                <span>I'm Vengeance</span>
               </div>
 
               <Hero3DCanvas />
