@@ -19,7 +19,7 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-slate-400 leading-relaxed pl-16">
               <p>
-                Hello! I'm Sahil Shirsath, an aspiring software engineer with expertise in full-stack development and machine learning. I am currently finishing my B.Tech in Computer Science at Sandip University.
+                Hello! I'm Sahil Shirsath, a software engineer with expertise in full-stack development and machine learning. I graduated with a B.Tech in Computer Science & Engineering from Sandip University.
               </p>
               <p>
                 I have extensive experience building real-world applications, including an NLP-based Fake News Detection system and a real-time chat platform (Connectify) with live interaction features. I focus on delivering efficient, scalable, and impactful solutions using modern tech stacks like React and Node.js.

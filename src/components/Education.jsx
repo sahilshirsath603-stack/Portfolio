@@ -32,17 +32,18 @@ export default function Education() {
                 <GraduationCap className="w-8 h-8 text-indigo-400" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white mb-2">B.Tech in Computer Science</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">Bachelor of Technology in Computer Science & Engineering</h3>
                 <div className="text-xl text-indigo-400 mb-4 font-medium flex items-center gap-2">
                   <a href="https://www.sandipuniversity.edu.in/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-300 transition-colors inline-flex items-center gap-2">
                     Sandip University <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
                 <p className="text-slate-400 leading-relaxed mb-6">
-                  Currently in my 8th semester, pursuing my Bachelor of Technology degree. Focusing on software engineering, web development, and exploring modern tech stacks to build robust applications.
+                  Graduated with a Bachelor of Technology in Computer Science & Engineering, with a focus on software engineering, full-stack web development, and building practical, user-focused applications.
                 </p>
-                <div className="inline-block px-4 py-2 bg-slate-800 text-slate-300 rounded-full text-sm font-medium border border-slate-700">
-                  Current Status: Pursuing
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 text-emerald-400 rounded-full text-sm font-medium border border-emerald-500/20">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  Status: Graduated • CGPA: 8.33/10
                 </div>
               </div>
             </div>
