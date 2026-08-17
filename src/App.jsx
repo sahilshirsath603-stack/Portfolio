@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -8,14 +8,27 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
+import ScrollProgress from './components/canvas/ScrollProgress';
+import CursorAura from './components/canvas/CursorAura';
+import RainOverlay from './components/canvas/RainOverlay';
+
 function App() {
   return (
-    <div className="relative overflow-hidden min-h-screen text-slate-100 font-sans">
-      <div className="fixed inset-0 min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-black -z-10" />
-      
+    <div className="relative min-h-screen text-slate-100 font-sans selection:bg-rose-500/30 selection:text-rose-200">
+      {/* Scroll Progress Bar */}
+      <ScrollProgress />
+
+      {/* Rain Streak Overlay */}
+      <RainOverlay />
+
+      {/* Interactive Cursor Aura Follower */}
+      <CursorAura />
+
+      {/* Main Navbar */}
       <Navbar />
-      
-      <main id="gravity-content" className="transition-opacity duration-1000 opacity-100 blur-0">
+
+      {/* Page Sections */}
+      <main className="relative z-10 space-y-4">
         <Hero />
         <About />
         <Education />

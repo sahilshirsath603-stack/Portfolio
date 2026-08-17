@@ -2,15 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  
+  body {
+    @apply bg-[#000000] text-slate-100 font-sans antialiased overflow-x-hidden;
+    background-image: 
+      radial-gradient(at 50% 0%, rgba(255, 0, 60, 0.18) 0px, transparent 55%),
+      radial-gradient(at 0% 40%, rgba(185, 28, 28, 0.12) 0px, transparent 50%),
+      radial-gradient(at 100% 80%, rgba(220, 38, 38, 0.14) 0px, transparent 50%);
+  }
+
+  /* Custom Red & Pitch Black Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2b0b14;
+    border-radius: 5px;
+    border: 2px solid #000000;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff003c;
+  }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-rose-400 to-red-600;
   }
-  .glass-card {
-    @apply bg-slate-900/40 backdrop-blur-md border border-slate-800/50 shadow-xl;
+
+  .text-gradient-red {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-rose-400 via-red-500 to-rose-600;
+  }
+
+  /* Pure Black & Crimson Red Glassmorphism Card */
+  .glass-card-3d {
+    @apply bg-[#0a0507]/90 backdrop-blur-xl border border-red-900/40 shadow-2xl transition-all duration-300;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.95), inset 0 1px 0 0 rgba(255, 0, 60, 0.08);
+  }
+
+  .glass-card-3d:hover {
+    @apply border-red-600/70;
+    box-shadow: 0 20px 45px -10px rgba(255, 0, 60, 0.35), inset 0 1px 0 0 rgba(255, 0, 60, 0.2);
+  }
+
+  /* Tactical Grid Background */
+  .bg-cyber-grid {
+    background-size: 36px 36px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 0, 60, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 0, 60, 0.03) 1px, transparent 1px);
+  }
+
+  /* 3D Depth Utilities */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
   }
 }
